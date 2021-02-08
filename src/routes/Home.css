@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes loading {
+    0% {
+        font-size: 30px;
+    }
+
+    50% {
+        font-size: 34px;
+    }
+
+    100% {
+        font-size: 30px;
+    }
+}
+
+.loader {
+    height: 100vh;
+    animation: loading infinite 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.movies {
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
